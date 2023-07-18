@@ -114,3 +114,38 @@ audio{
   top: 0%;
   right: 0%;
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  background-color: #1c1c1c;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.popup p {
+  margin-bottom: 20px;
+  color: #ffc800;
+  font-size: 30px;
+}
+
+button {
+  background-color: #ffc800;
+  color: #323232;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  font-family: 'The Bold Font';
+}
+
+button:hover {
+  background-color: #ffc800;
+  cursor: pointer;
+}

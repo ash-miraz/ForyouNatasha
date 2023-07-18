@@ -87,3 +87,23 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
+
+// Wait until the DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Select elements
+  var popup = document.getElementById('popup');
+  var allowButton = document.getElementById('allowButton');
+  var backgroundMusic = document.getElementById('backgroundMusic');
+
+  // Show the popup
+  popup.style.display = 'block';
+
+  // Handle allow button click event
+  allowButton.addEventListener('click', function() {
+    // Hide the popup
+    popup.style.display = 'none';
+    
+    // Play background music
+    backgroundMusic.play();
+  });
+});
