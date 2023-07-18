@@ -10,16 +10,12 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
-
   background-size: 1000px;
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
   background-position: center center;
-}
-image{
-  width: 100%;
-  height: 100%;
 }
 
 .paper {
@@ -28,10 +24,8 @@ image{
   background-position: center center;
   padding: 20px 100px;
 /*  min-width: 800px; */
-  
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
-  
   position: absolute;
 }
 
@@ -61,6 +55,20 @@ img {
   max-height: 200px;
   width: 100%;
   user-select: none;
+
+}
+
+.N1{
+  scale: 1;
+  object-fit: none;
+}
+.N3{
+  scale: 1;
+  object-fit: cover;
+}
+.N4{
+  scale: 1;
+  object-fit: cover;
 }
 
 .paper.heart::after {
@@ -93,11 +101,11 @@ img {
 
 p {
   font-family: 'The Bold Font';
+  text-align: center;
   font-size: 50px;
   color: rgb(0,0,100);
-  opacity: 0.75;
+  opacity: .80;
   user-select: none;
-  
   filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }
 
